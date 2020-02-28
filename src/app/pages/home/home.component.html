@@ -1,0 +1,185 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- COLUNA DA ESQUERDA ONDE CONTÉM OS AMIGOS -->
+        <div class="col-3">
+            <!-- Logo e pesquisa -->
+            <div class="row p-3 bg-cinza">
+                <div class="col-6">
+                    <h4 class="texto-cinza logo" routerLink="/login">
+                        <i class="fa fa-comments" style="font-size: 26px;"></i> HiChat
+                    </h4>
+                </div>
+                <div class="col-6 d-flex">
+                    <i class="fa fa-search mt-1 mr-1 texto-cinza" style="font-size: 20px;"></i>
+                    <input class="input-search" type="search" placeholder="Search">
+                </div>
+            </div>
+            <!-- /Logo e pesquisa -->
+
+            <!-- Adicionar amigos -->
+            <div class="row p-3 bg-secundario">
+                <div class="col-6 d-flex align-items-center">
+                    <h4 class="texto-principal texto-friends">FRIENDS</h4>
+                </div>
+                <div class="col-6 text-right">
+                    <button class="botao-adicionar neomorphism">NEW</button>
+                </div>
+            </div>
+            <!-- /Adicionar amigos -->
+
+            <!-- Amigos -->
+            <!-- Consumindo objeto de usuários que montei no javascript simulando uma API que retorna as mensagens -->
+            <div class="row p-3 bg-secundario border-top" *ngFor="let usuario of usuarios">
+                <div class="col-3">
+                    <div class="item">
+                        <span class="notify-badge">4</span>
+                        <img [src]="usuario.foto" width="100%">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p class="nome-amigo">{{usuario.nome}}</p>
+                    <p class="mensagem-amigo">{{usuario.mensagem}}</p>
+                </div>
+                <div class="col-3">
+                    <p class="horario-amigo">{{usuario.horario}}</p>
+                </div>
+            </div>
+            <!-- /Amigos -->
+
+        </div>
+
+        <!-- COLUNA PRINCIPAL COM CHAT E PESSOAS ONLINE -->
+        <div class="col-9 bg-light">
+            <div class="row bg-principal">
+                <div class="col-9">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <p class="nav-link links-nav ativo texto-branco">Friends</p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link links-nav texto-branco">Works</p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link links-nav texto-branco">Family</p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link links-nav texto-branco">+ Category</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 pt-2">
+                    <img src="../../../assets/img/foto-usuario.jpg" class="float-left mr-3 rounded-lg" width="46px" alt="">
+                    <p class="nome-perfil">João Sena</p>
+                    <p class="status-perfil">Available ▽</p>
+                </div>
+            </div>
+
+            <!-- NAV COM AÇÕES PARA O USUARIO -->
+            <div class="row border-bottom">
+                <div class="col-8 bg-branco py-4 d-flex align-items-center justify-content-end">
+                    <h4 class="texto-principal texto-chat">CHAT</h4>
+                    <div class="text-right">
+                        <i class="fa fa-phone texto-cinza px-3 icones-chat"></i>
+                        <i class="fa fa-video-camera texto-cinza px-3 icones-chat"></i>
+                        <i class="fa fa-ellipsis-h texto-cinza px-3 icones-chat"></i>
+                    </div>
+                </div>
+                <div class="col-4 bg-secundario d-flex align-items-center">
+                    <h4 class="texto-principal texto-chat">ONLINE USERS</h4>
+                </div>
+            </div>
+
+            <!-- MENSAGENS DO CHAT E USUARIOS ONLINE -->
+            <!-- Mensagem do amigo do usuário -->
+            <div class="row">
+                <div class="col-8 bg-branco pt-3">
+                    <div class="row mb-3">
+                        <div class="col-2 pr-0">
+                            <img src="../../../assets/img/foto-robert.jpeg" class="rounded-lg" width="70%">
+                        </div>
+                        <div class="col-8 pl-0">
+                            <div class="card-mensagem-amigo">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                <p class="mensagem-horario">2 a.m</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mensagem do amigo do usuário -->
+                    <div class="row mb-3">
+                        <div class="col-2 pr-0">
+                            <img src="../../../assets/img/foto-robert.jpeg" class="rounded-lg" width="70%">
+                        </div>
+                        <div class="col-8 pl-0">
+                            <div class="card-mensagem-amigo">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+                                <p class="mensagem-horario">2 a.m</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mensagem do usuário próprio -->
+                    <div class="row mb-3">
+                        <div class=" offset-4 col-8 pl-0">
+                            <div class="card-mensagem-usuario">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                </p>
+                                <p class="mensagem-horario">2 a.m</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mensagem do amigo do usuário -->
+                    <div class="row mb-3">
+                        <div class="col-2 pr-0">
+                            <img src="../../../assets/img/foto-robert.jpeg" class="rounded-lg" width="70%">
+                        </div>
+                        <div class="col-8 pl-0">
+                            <div class="card-mensagem-amigo">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+                                <p class="mensagem-horario">2 a.m</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mensagem do usuário próprio -->
+                    <div class="row mb-3">
+                        <div class=" offset-4 col-8 pl-0">
+                            <div class="card-mensagem-usuario">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                </p>
+                                <p class="mensagem-horario">2 a.m</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-3 barra-mensagem">
+                        <div class="col-9">
+                            <input class="input-mensagem shadow" type="text" placeholder="ESCREVA SUA MENSAGEM">
+                        </div>
+                        <div class="col-3 text-center">
+                            <button class="botao-adicionar shadow">ENVIAR</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 bg-secundario">
+                    <div class="row p-3 bg-secundario border-top" *ngFor="let usuarioOn of usuariosOnline">
+                        <div class="col-3">
+                            <div class="item">
+                                <img [src]="usuarioOn.foto" class="rounded-lg" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <p class="nome-amigo">{{usuarioOn.nome}}</p>
+                            <p class="mensagem-amigo">{{usuarioOn.status}}</p>
+                        </div>
+                        <div class="col-3">
+                            <i class="fa fa-circle texto-principal px-3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</div>

@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+html, body{ height: 100%; width: 100%; margin: 0; padding: 0; background: rgb(252, 252, 252); }
+
+.neomorphism{
+    box-shadow: 
+    inset 0 0 10px rgba(55, 84, 170, 0), 
+    inset 0 0 15px rgba(255, 255, 255, 0), 
+    10px 10px 13px rgba(55, 84, 170, 0.15), 
+    -10px -10px 22px white, 
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+}
+
+// ESTILOS PADRÕES PARA O PROJETO E VARIÁVEIS
+.bg-principal{ background: #509EE2; }
+.bg-secundario{ background: #F1F5F8; }
+.bg-cinza{ background: #D6DFE6; }
+.bg-branco{ background: #fff; }
+
+.texto-principal{ color: #509EE2; }
+.texto-cinza{ color: #97b1c5; }
+.texto-branco{ color: #fafafa; }
+
+:root {
+    --primary-color:   #509EE2;
+    --secondary-color: #F1F5F8;
+    --tertiary-color: #2e7ec5;
+    --success-color:   #27b161;
+    --warning-color:   #f1c40f;
+    --info-color:      #3498db;
+    --danger-color:    #e74c3c;
+    --light-color:     #ecf0f1;
+    --gray-color:      #D6DFE6;
+    --dark-color:      #333;
+    --white-color:     #fff;
+}

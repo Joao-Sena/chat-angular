@@ -1,0 +1,144 @@
+.logo{ font-size: 18px; font-weight: 500; &:hover{ cursor: pointer; } }
+
+.input-search{
+    border: none;
+    padding: 0;
+    margin: 0 0 0 5px;
+    width: 100%;
+    background: none;
+    font-weight: bold;
+    &::placeholder{ color: #97b1c5; padding-left: 5px; }
+    &:focus{ box-shadow:  inset 1px 1px 5px #9296a0, inset -1px -1px 3px rgb(221, 221, 221); border: none; }
+}
+
+.botao-adicionar{
+    border: none;
+    width: 90px;
+    padding: 8px;
+    color: var(--white-color);
+    font-weight: 200;
+    border-radius: 4px;
+    background: var(--primary-color);
+}
+
+.texto-friends{
+    font-size: 16px;
+    margin: 0;
+    text-align: right;
+}
+
+.nome-amigo{
+    font-size: 16px;
+    color: var(--dark-color);
+    margin: 0 0 4px 0;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.mensagem-amigo{
+    font-size: 13px;
+    color: #9b9b9b;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.horario-amigo{
+    font-size: 16px;
+    color: #838383;
+    margin: 0;
+    font-weight: 500;
+}
+
+.item {
+    position:relative;
+    display:inline-block;
+}
+
+.notify-badge{
+    position: absolute;
+    left:0px;
+    top:-8px;
+    background: var(--primary-color);
+    text-align: center;
+    border-radius: 50%;
+    color: var(--white-color);
+    font-size:13px;
+    height: 24px;
+    width: 24px;
+    border: 2px solid var(--light-color);
+}
+
+.conversa-ativa{ font-size: 18px; font-weight: 500; color: var(--primary-color); background: var(--white-color); padding: 0px 8px; }
+
+// ESTILOS UTILIZADOS NO NAVBAR
+.links-nav{
+    margin: 0;
+    padding: 21px 30px;
+}
+
+.ativo{
+    background: #6AACE6;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 11px;
+}
+
+.nome-perfil{
+    font-size: 15px;
+    color: var(--light-color);
+    font-weight: 500;
+    margin: 0 0 3px 0;
+}
+
+.status-perfil{
+    font-size: 14px;
+    color: var(--light-color);
+    font-weight: 300;
+    margin: 0;
+}
+
+// ESTILO NAVBAR SECUNDÁRIO COM FUNÇÕES DO USUÁRIO
+.texto-chat{
+    font-size: 16px;
+    margin: 0;
+    text-align: left !important;
+    position: absolute;
+    left: 16px;
+    font-weight: bold;
+}
+
+.icones-chat{
+    font-size: 22px;
+}
+
+// ESTILOS PARA A PARTE DO CHAT ONDE ESTÃO AS MENSAGENS
+.card-mensagem-amigo{
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 16px;
+    border-radius: 10px;
+    p{ font-size: 14px; line-height: 20px; margin-bottom: 0px; }
+}
+
+.card-mensagem-usuario{
+    background: var(--secondary-color);
+    color: var(--dark-color);
+    padding: 10px 16px;
+    border-radius: 10px;
+    p{ font-size: 14px; line-height: 20px; margin-bottom: 0px; }
+}
+
+// ESTILOS PARA A BARRA DE BAIXO PARA ENVIAR MENSAGEM
+.input-mensagem{
+    padding: 7px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+}
+
+.barra-mensagem{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
