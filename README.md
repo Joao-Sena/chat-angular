@@ -1,6 +1,8 @@
 # ChatPsd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
+Projeto criado em ANGULAR 8.
+
+Este projeto consiste em um CHAT de conversas e o que foi desenvolvido foi todo o FRONT-END do CHAT de como irá funcionar sua página de LOGIN e sua PÁGINA DE CONVERSAS.
 
 ## Development server
 
